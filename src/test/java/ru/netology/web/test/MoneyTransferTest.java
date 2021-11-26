@@ -11,7 +11,7 @@ import ru.netology.web.page.LoginPage;
 import static com.codeborne.selenide.Selenide.open;
 
 class MoneyTransferTest {
-//java -jar ./artifacts/app-ibank-build-for-testers.jar -P:profile=test
+
   @BeforeEach
   void setupAll() {
     open("http://localhost:9999");
