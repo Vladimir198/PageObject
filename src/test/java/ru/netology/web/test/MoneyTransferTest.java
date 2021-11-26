@@ -80,7 +80,7 @@ class MoneyTransferTest {
     Assertions.assertEquals(expectedSecond, balanceSecond);
     Assertions.assertTrue(balanceSecond >= 0);
   }
-
+/*
   @Test
   void shouldTransferMoneyWithPennies() {
     var dashBoardPage1 = new DashboardPage();
@@ -140,4 +140,5 @@ class MoneyTransferTest {
     Assertions.assertEquals(expectedSecond, balanceSecond);
     Assertions.assertTrue(balanceSecond >= 0);
   }
+  */
 }
