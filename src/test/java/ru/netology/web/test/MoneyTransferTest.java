@@ -2,6 +2,7 @@ package ru.netology.web.test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.web.data.DataHelper;
 import ru.netology.web.page.DashboardPage;
@@ -11,8 +12,8 @@ import static com.codeborne.selenide.Selenide.open;
 
 class MoneyTransferTest {
 //java -jar ./artifacts/app-ibank-build-for-testers.jar -P:profile=test
-  @BeforeAll
-  static void setupAll() {
+  @BeforeEach
+  void setupAll() {
     open("http://localhost:9999");
     var loginPage = new LoginPage();
     var authInfo = DataHelper.getAuthInfo();
